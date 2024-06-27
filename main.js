@@ -39,10 +39,7 @@ const start = async () => {
 };
 
 const isMobileDevice = () => {
-  return (
-    typeof window.orientation !== "undefined" ||
-    navigator.userAgent.indexOf("IEMobile") !== -1
-  );
+  return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 };
 
 start();
