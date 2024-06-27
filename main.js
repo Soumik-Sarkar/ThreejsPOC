@@ -42,4 +42,16 @@ const isMobileDevice = () => {
   return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 };
 
+const changeRandomColor = () => {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  plane.material.color.setHex(`0x${randomColor}`);
+};
+
+const changeWhiteColor = () => {
+  plane.material.color.setHex(`0xffffff`);
+};
+
+document.getElementById("whiteColorButton").addEventListener("click", changeWhiteColor);
+document.getElementById("randomColorButton").addEventListener("click", changeRandomColor);
+
 start();

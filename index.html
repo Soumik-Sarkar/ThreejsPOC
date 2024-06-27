@@ -27,13 +27,35 @@
         left: 0;
         z-index: 2;
       }
+      #randomColorButton {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+      #whiteColorButton {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        z-index: 100;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div id="control">
-     <!--  <button id="startButton">Start</button>
+      <!--  <button id="startButton">Start</button>
       <button id="stopButton">Stop</button> -->
     </div>
     <div id="container"></div>
+    <button id="randomColorButton">Change Random Color</button>
+    <button id="whiteColorButton">Change White Color</button>
   </body>
 </html>
